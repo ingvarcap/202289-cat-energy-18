@@ -16,9 +16,13 @@
 html {
   webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
   color: #111111;
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +33,7 @@ body {
   color: #111111;
   margin: 0 auto;
   padding: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -38,12 +43,6 @@ img {
 
 a {
   text-decoration: none;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 a:active {
@@ -60,6 +59,8 @@ input {
 
 textarea {
   outline: none;
+  margin: 0;
+  padding: 0;
 }
 
 input:active {
@@ -84,6 +85,22 @@ input:focus {
   padding: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .inner {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
@@ -99,12 +116,37 @@ input:focus {
 }
 
 .inner-link {
-  font-size: 16px;
-  line-height: 20px;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
   width: 280px;
   color: #ffffff;
   font-weight: 400;
   text-align: center;
-  background-color: #68b738;
+  text-transform: uppercase;
+  background-color: @background-main;
+  margin-bottom: 15px;
   padding: 13px 0;
+}
+
+.inner-link:hover {
+  background: #5eaa2f;
+}
+
+.inner-link:active {
+  color: #99c684;
+  background: #5eaa2f;
+}
+
+input[placeholder],
+textarea[placeholder] {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 15px;
+  display: block;
 }

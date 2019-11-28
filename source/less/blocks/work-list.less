@@ -1,3 +1,129 @@
 .work-list__item {
-  font-family: "Arial", sans-serif;
+  position: relative;
+  font-family: "Arial", "PT Sans", sans-serif;
+  margin: 0;
+  padding-left: 80px;
+  margin-bottom: 40px;
+}
+
+.work-list__item::before {
+  position: absolute;
+  content: "";
+  background-color: @background-main;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+
+.work-list__item-leaf::after,
+.work-list__item-powder::after,
+.work-list__item-dining::after,
+.work-list__item-clock::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+}
+
+.work-list__item-leaf::after {
+  background-image: url("../img/advantage-leaf@1x.png");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: cover;
+  }
+}
+
+.work-list__item-powder::after {
+  background-image: url("../img/advantage-powder@1x.png");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: cover;
+  }
+}
+
+.work-list__item-dining::after {
+  background-image: url("../img/advantage-dining@1x.png");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: cover;
+  }
+}
+
+.work-list__item-clock::after {
+  background-image: url("../img/advantage-clock@1x.png");
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: cover;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .work-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    counter-reset: list 0;
+  }
+
+  .work-list__item {
+    width: 210px;
+    margin: 0;
+    padding: 0;
+    margin-right: 85px;
+    margin-top: 115px;
+    margin-bottom: 90px;
+  }
+
+  .work-list__counter {
+    position: relative;
+  }
+
+  .work-list__item:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .work-list__item::before {
+    top: -115px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .work-list__item-leaf::after,
+  .work-list__item-powder::after,
+  .work-list__item-dining::after,
+  .work-list__item-clock::after {
+    top: -100px;
+    left: 15px;
+    z-index: 1;
+  }
+
+  .work-list__counter::after {
+    position: absolute;
+    font-size: 281px;
+    counter-increment: list;
+    content: counter(list) "";
+    color: @background-main-2;
+    top: 92px;
+    left: 111px;
+    z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .work-list {
+    flex-wrap: nowrap;
+  }
+
+  .work-list__item {
+    margin-right: -35px;
+  }
 }
