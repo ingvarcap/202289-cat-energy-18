@@ -1,0 +1,403 @@
+.profile,
+.choice-programm,
+.contact,
+.comment,
+.add {
+  position: relative;
+  width: 280px;
+}
+
+.profile::after,
+.choice-programm::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.profile__data:first-child {
+  margin-top: 0;
+}
+
+.profile__data:last-child {
+  margin-bottom: 25px;
+}
+
+.profile__info {
+  width: 100%;
+  margin-left: 15px;
+}
+
+.choice-programm__data:first-child {
+  margin-top: 30px;
+}
+
+.choice-programm__data:last-child {
+  margin-bottom: 30px;
+}
+
+.choice-programm__info {
+  opacity: 0;
+}
+
+.choice-programm__data {
+  margin-bottom: 28px;
+}
+
+.choice-programm label {
+  position: relative;
+  padding-left: 20px;
+}
+
+.choice-programm label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  top: -4px;
+  left: -30px;
+  border: 1px solid #cecece;
+  border-radius: 50%;
+}
+
+.choice-programm input[type="radio"]:checked + label::after {
+  position: absolute;
+  content: "";
+  background-color: @background-main;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 5px;
+  left: -21px;
+}
+
+.contact,
+.comment,
+.add {
+  position: relative;
+  padding: 1px;
+  margin: auto;
+}
+
+.contact::before,
+.comment::before,
+.add::before {
+  content: "";
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100vw;
+  height: 3px;
+  background: @background-main;
+  z-index: -1;
+}
+
+.contact__header,
+.comment__header,
+.add__header {
+  display: inline-block;
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 400;
+  background: #ffffff;
+  text-transform: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  padding: 0 20px;
+}
+
+.contact-info {
+  position: relative;
+  width: 100%;
+  margin-left: 15px;
+}
+
+.contact__data::before {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-mail.svg");
+  width: 18px;
+  height: 13px;
+  bottom: 111px;
+  right: 21px;
+}
+
+.contact__data::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-phone.svg");
+  width: 20px;
+  height: 20px;
+  bottom: 44px;
+  right: 15px;
+}
+
+.contact__data:last-child {
+  margin-bottom: 30px;
+}
+
+.comment textarea {
+  margin-bottom: 32px;
+  width: 280px;
+}
+
+.add__info {
+  opacity: 0;
+}
+
+.add label {
+  position: relative;
+  padding-left: 20px;
+}
+
+.add input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 17px;
+  top: 4px;
+  left: -19px;
+}
+
+.add label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cecece;
+  top: -3px;
+  left: -24px;
+}
+
+.add__data:last-child {
+  margin-bottom: 35px;
+}
+
+.programm__form__refinement {
+  font-family: "Arial", "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+}
+
+.contacts__map-wrapper {
+  height: 365px;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .profile,
+  .choice-programm,
+  .contact,
+  .comment,
+  .add {
+    position: relative;
+    width: @width-inner-tablet;
+  }
+
+  .profile__data {
+    margin-left: 39px;
+    margin-right: 39px;
+  }
+
+  .contact__header,
+  .comment__header,
+  .add__header {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .choice-programm {
+    width: 630px;
+    border: 1px solid #e6e6e6;
+    margin: 0 auto;
+  }
+
+  .choice-programm input[type="radio"]:checked + label::after {
+    width: 18px;
+    height: 18px;
+    top: 1px;
+    left: -20px;
+  }
+
+  .choice-programm label::before {
+    width: 38px;
+    height: 38px;
+    top: -9px;
+  }
+
+  .profile::after,
+  .choice-programm::after {
+    border: none;
+  }
+
+  .choice-programm__data {
+    margin-left: 30px;
+  }
+
+  .contact {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  .comment textarea {
+    width: 630px;
+    margin: 0 20px;
+  }
+
+  .add__wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .add__data {
+    width: 315px;
+    margin: 27px auto;
+  }
+
+  .add label {
+    padding-left: 40px;
+  }
+
+  .add label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .add input[type="checkbox"]:checked + label::after {
+    width: 23px;
+    top: 8px;
+    left: -13px;
+  }
+
+  .contacts__map-wrapper {
+    position: relative;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programm__wrapper,
+  .contact,
+  .comment,
+  .add {
+    width: @width-inner-desktop;
+  }
+
+  .programm__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 90px;
+  }
+
+  .profile,
+  .choice-programm {
+    width: 570px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .profile__data {
+    margin-left: 0;
+  }
+
+  .profile__data:last-child {
+    margin-bottom: 0;
+  }
+
+  .choice-programm__data:first-child {
+    margin-top: 36px;
+  }
+
+  .contact::before,
+  .comment::before {
+    top: 21px;
+  }
+
+  .add::before {
+    top: 53px;
+  }
+
+  .contact__header {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .contact__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 90px;
+  }
+
+  .contact__data {
+    width: 570px;
+    margin: 0;
+  }
+
+  .contact__data:last-child {
+    margin: 0;
+  }
+
+  .contact__data::before {
+    bottom: 107px;
+    right: 670px;
+  }
+
+  .contact__data::after {
+    bottom: 103px;
+  }
+
+  .comment__header {
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .comment textarea {
+    margin-bottom: 80px;
+  }
+
+  .add__header {
+    margin-bottom: 70px;
+  }
+
+  .add__data {
+    width: 245px;
+    margin-top: 0;
+    margin-bottom: 75px;
+  }
+
+  .add__data:last-child {
+    margin-bottom: 75px;
+  }
+
+  .add__wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .contacts {
+    background: #ffffff;
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    width: 570px;
+    margin: 0;
+    background: @background-main-2;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    opacity: 1;
+  }
+}

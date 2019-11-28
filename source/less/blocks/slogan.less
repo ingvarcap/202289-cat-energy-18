@@ -1,27 +1,116 @@
 .slogan {
   position: relative;
-  background-image: url("../img/index-background-mobile@1x.jpg");
   color: #ffffff;
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  margin-bottom: 135px;
+  background-size: cover;
+  height: 480px;
+  margin-bottom: 165px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .slogan__header {
   font-size: 36px;
-  font-weight: 400;
   line-height: 36px;
+  font-weight: 400;
   text-align: center;
+  margin: 0;
+  margin-top: 30px;
 }
 
 .slogan__description {
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   text-align: center;
-  margin-bottom: 160px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 420px;
 }
 
 .slogan__img {
+  display: block;
   position: absolute;
-  top: 170px;
-  left: 20px;
+  width: 280px;
+  top: 265px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slogan__inner-link {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .slogan {
+    width: @width-inner-tablet;
+    color: #000000;
+    background-image: none;
+    height: 840px;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+
+  .slogan__header {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    text-align: left;
+    width: @width-inner-tablet;
+    padding-left: 75px;
+    margin: 0;
+    margin-top: 61px;
+    margin-bottom: 35px;
+  }
+
+  .slogan__description {
+    font-size: 20px;
+    line-height: 20px;
+    width: @width-inner-tablet;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 75px;
+  }
+
+  .slogan__img {
+    width: 709px;
+    left: calc(50% - 20px);
+    top: 252px;
+    z-index: -1;
+  }
+
+  .slogan__inner-link {
+    .inner-link;
+    width: 245px;
+    margin: 0;
+    margin-left: 75px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slogan {
+    width: @width-inner-desktop;
+    height: 640px;
+  }
+
+  .slogan__header {
+    width: @width-inner-desktop;
+  }
+
+  .slogan__description {
+    width: @width-inner-desktop;
+  }
+
+  .slogan__img {
+    width: 552px;
+    top: 0;
+    left: calc(50% - -117px);
+    z-index: 0;
+  }
 }
