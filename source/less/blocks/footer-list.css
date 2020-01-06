@@ -8,19 +8,6 @@
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
-.footer-list__item {
-  padding-top: 22px;
-  padding-bottom: 32px;
-}
-.footer-list__link {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-}
-.footer-list__icon {
-  position: absolute;
-}
 .footer-list__icon-vk-mobile {
   width: 22px;
   height: 12px;
@@ -32,6 +19,19 @@
 .footer-list__icon-fb-mobile {
   width: 10px;
   height: 19px;
+}
+.footer-list__item {
+  padding-top: 22px;
+  padding-bottom: 32px;
+}
+.footer-list__icon {
+  position: absolute;
+}
+.footer-list__link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .footer-list {
