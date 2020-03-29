@@ -5,11 +5,59 @@
   text-transform: uppercase;
 }
 
+.logo-menu-wrapper__btn {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  width: 23px;
+  height: 23px;
+  right: calc(~"50% - 140px");
+  top: 29px;
+  border: none;
+  cursor: pointer;
+}
+
+.logo-menu-wrapper--opened .logo-menu-wrapper__btn {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.logo-menu-wrapper--closed .logo-menu-wrapper__btn::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 0;
+  width: 25px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 7px 0 0 rgb(0, 0, 0), 0 14px 0 rgb(0, 0, 0);
+}
+
+.logo-menu-wrapper--nojs .logo-menu-wrapper__btn {
+  display: none;
+}
+
 .logo-menu-wrapper__logo {
   margin: 0 auto;
   padding-right: 86px;
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
   :hover {
     opacity: 0.8;
@@ -20,13 +68,6 @@
   }
 }
 
-.logo-menu-wrapper__btn {
-  display: none;
-  position: absolute;
-  right: calc(~"50% - 140px");
-  top: 20px;
-}
-
 @media (min-width: @tablet-width) {
   .logo-menu-wrapper {
     width: @width-inner-tablet;
@@ -35,12 +76,13 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    margin-bottom: 56px;
   }
 
   .logo-menu-wrapper__logo {
     flex-shrink: 0;
-    margin-right: 81px;
-    margin-top: 22px;
+    margin-right: 96px;
+    margin-top: 24px;
     padding: 0;
   }
 
@@ -57,6 +99,7 @@
 @media (min-width: @desktop-width) {
   .logo-menu-wrapper {
     width: @width-inner-desktop;
+    margin-bottom: 52px;
   }
 
   .logo-menu-wrapper__logo {

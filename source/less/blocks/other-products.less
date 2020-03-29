@@ -1,9 +1,9 @@
 .other-products {
   margin-top: 40px;
-  border-top: 3px solid @background-main;
 }
 
 .other-products__header {
+  position: relative;
   display: inline-block;
   font-size: 24px;
   line-height: 24px;
@@ -12,7 +12,17 @@
   transform: translateY(-72%);
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.other-products__header::before {
+  position: absolute;
+  content: "";
+  width: 55px;
+  height: 3px;
+  background-color: @background-main;
+  top: 13px;
+  right: -77px;
 }
 
 .other-products__list {
@@ -43,8 +53,8 @@
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   padding: 0;
 }
 
@@ -60,6 +70,7 @@
   font-size: 16px;
   line-height: 20px;
   border-bottom: 1px solid #cdcdcd;
+  padding: 12px 0;
 }
 
 .other-products__promo {
@@ -74,7 +85,7 @@
 }
 
 .other-products__promo-img {
-  margin: 65px auto;
+  margin: 62px auto;
 }
 
 .other-products__promo-description {
