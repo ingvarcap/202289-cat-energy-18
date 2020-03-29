@@ -30,11 +30,17 @@
   }
 }
 
+@media (max-width: @mobile-width-only) {
+  .logo-menu-wrapper--closed .site-list {
+    display: none;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: 34px;
 
     li {
       padding: 0;
@@ -54,20 +60,21 @@
     font-size: 18px;
     line-height: 24px;
     padding-top: 0;
-    padding-bottom: 12px;
+    padding-bottom: 6px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .site-list {
     width: 100%;
-    margin-top: 45px;
+    margin-top: 58px;
   }
 
   .site-list__item a {
+    font-size: 20px;
     color: #ffffff;
     margin: 0;
-    padding: 15px 18px;
+    padding: 8px 0;
   }
 
   .site-list__item--catalog a {

@@ -1,11 +1,11 @@
 .slogan {
   position: relative;
   color: #ffffff;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 480px;
-  margin-bottom: 165px;
+  height: 301px;
+  margin-bottom: 180px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -18,7 +18,7 @@
   font-weight: 400;
   text-align: center;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 24px;
 }
 
 .slogan__description {
@@ -28,15 +28,14 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 420px;
+  margin-top: 26px;
 }
 
 .slogan__img {
   display: block;
   position: absolute;
   width: 280px;
-  top: 265px;
+  top: 165px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -44,7 +43,7 @@
 .slogan__inner-link {
   display: block;
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-top: 300px;
 }
 
 @media (min-width: @tablet-width) {
@@ -63,54 +62,66 @@
     font-weight: 400;
     text-align: left;
     width: @width-inner-tablet;
-    padding-left: 75px;
+    padding-left: 87px;
     margin: 0;
-    margin-top: 61px;
-    margin-bottom: 35px;
+    margin-top: 56px;
+    margin-bottom: 40px;
   }
 
   .slogan__description {
     font-size: 20px;
     line-height: 20px;
     width: @width-inner-tablet;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 48px;
     text-align: left;
-    padding-left: 75px;
+    padding-left: 88px;
   }
 
   .slogan__img {
     width: 709px;
-    left: calc(50% - 20px);
-    top: 252px;
+    left: 50%;
+    top: 257px;
     z-index: -1;
   }
 
   .slogan__inner-link {
     .inner-link;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 0;
     width: 245px;
     margin: 0;
-    margin-left: 75px;
+    margin-left: 89px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .slogan {
     width: @width-inner-desktop;
-    height: 640px;
+    height: 525px;
+    margin-bottom: 84px;
   }
 
   .slogan__header {
-    width: @width-inner-desktop;
+    margin-bottom: 42px;
+    padding-left: 80px;
   }
 
   .slogan__description {
     width: @width-inner-desktop;
+    padding-left: 79px;
+    margin-bottom: 51px;
   }
 
   .slogan__img {
     width: 552px;
-    top: 0;
+    top: -30px;
     left: calc(50% - -117px);
     z-index: 0;
+  }
+
+  .slogan__inner-link {
+    margin-left: 80px;
   }
 }

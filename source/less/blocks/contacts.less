@@ -1,13 +1,19 @@
+
 .contacts--catalog,
 .contacts--form {
   background: @background-main-2;
 }
 
+.contacts--catalog {
+  margin-top: 28px;
+  background-color: @background-main-2;
+}
+
 .contacts__wrapper {
   width: 280px;
   margin: 0 auto;
-  margin-top: 31px;
-  margin-bottom: 30px;
+  padding-top: 29px;
+  padding-bottom: 25px;
 }
 
 .contacts__invite {
@@ -16,7 +22,6 @@
   text-transform: uppercase;
   width: 136px;
   margin: 0;
-  margin-top: 31px;
 }
 
 .contacts__address {
@@ -26,56 +31,83 @@
   color: #444444;
   width: 136px;
   margin: 0;
-  margin-top: 31px;
-}
-
-.contacts {
-  background: @background-main-2;
+  margin-right: 4px;
 }
 
 .contacts__img-map-wrapper {
   position: relative;
-  height: 400px;
+  background-color: @background-main-2;
+}
+
+.contacts__img-map-wrapper::before {
+  position: absolute;
+  background-image: url("../img/map-pin-mobile.png");
+  content: "";
+  background-repeat: no-repeat;
+  width: 55px;
+  height: 53px;
+  top: 140px;
+  left: calc(50% - 24px);
+  z-index: 100;
 }
 
 .contacts__img-map {
   position: absolute;
   top: 0;
   left: calc(50% - 160px);
+  width: 100%;
   height: 360px;
 }
 
 
 @media (min-width: @tablet-width) {
   .contacts {
-    background: @background-main-2;
+    background-color: #ffffff;
+    width: 100%;
   }
 
   .contacts__wrapper {
-    width: @width-inner-tablet;
-    margin: 0 auto;
-    padding: 0;
+    width: 708px;
+    padding-bottom: 0;
   }
 
   .contacts__invite {
-    width: 150px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 155px;
     margin-left: 40px;
-    margin-right: 0;
-    margin-top: 75px;
+    margin-top: 36px;
     margin-bottom: 65px;
   }
 
   .contacts__address {
-    width: 150px;
-    margin-right: 40px;
+    width: 155px;
+    font-size: 16px;
+    margin-right: 42px;
     text-align: right;
-    margin-top: 75px;
-    margin-bottom: 65px;
+    margin-top: 34px;
+  }
+
+  .contacts__address-street {
+    display: block;
+    padding-bottom: 20px;
+  }
+
+  .contacts__img-map-wrapper {
+    position: relative;
+  }
+
+  .contacts__img-map-wrapper::before {
+    background-image: url("../img/map-pin.png");
+    width: 124px;
+    height: 106px;
+    top: 140px;
+    left: calc(50% - 62px);
+    z-index: 100;
   }
 
   .contacts__img-map {
-    left: calc(50% - 384px);
-    height: 400px;
+    left: calc(50% - 382px);
   }
 }
 
@@ -85,6 +117,21 @@
   }
 
   .contacts__img-map {
-    left: calc(50% - 720px);
+    left: calc(50% - 610px);
+  }
+
+  .contacts__img-map-wrapper::before {
+    background-image: url("../img/map-pin.png");
+    top: 150px;
+    left: calc(50% + 278px);
+  }
+
+  .contacts__invite {
+    margin-left: 76px;
+  }
+
+  .contacts__address {
+    text-align: left;
+    margin-right: 89px;
   }
 }
