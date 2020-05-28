@@ -1,21 +1,36 @@
-@import "../variables.less";
-@import "../mixins.less";
-
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.development-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .description__work {
   font-size: 36px;
   line-height: 60px;
   margin: 0;
   margin-bottom: 28px;
 }
-
-@media (min-width: @tablet-width) {
+@media (min-width: 768px) {
   .description__work {
     font-size: 60px;
     line-height: 60px;
     margin-top: 22px;
     margin-bottom: 70px;
   }
-
   .description__work-list {
     font-size: 16px;
     line-height: 24px;
@@ -23,8 +38,7 @@
     margin-bottom: -25px;
   }
 }
-
-@media (min-width: @desktop-width) {
+@media (min-width: 1300px) {
   .description {
     margin-bottom: 100px;
   }

@@ -1,6 +1,23 @@
-@import "../variables.less";
-@import "../mixins.less";
-
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.development-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .main-catalog__header {
   display: block;
   font-size: 36px;
@@ -15,13 +32,11 @@
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
-
-@media (min-width: @tablet-width) {
+@media (min-width: 660px) {
   .main-catalog {
-    width: @width-inner-tablet;
+    width: 659px;
     margin: 0 auto;
   }
-
   .main-catalog__header {
     font-size: 60px;
     line-height: 60px;
@@ -30,7 +45,6 @@
     border: none;
     margin-bottom: 166px;
   }
-
   .main-catalog__list {
     display: flex;
     flex-direction: row;
@@ -38,13 +52,11 @@
     flex-wrap: wrap;
   }
 }
-
-@media (min-width: @desktop-width) {
+@media (min-width: 960px) {
   .main-catalog {
-    width: @width-inner-desktop;
+    width: 1199px;
     margin: 0 auto;
   }
-
   .main-catalog__header {
     margin: 0 auto;
     text-align: left;

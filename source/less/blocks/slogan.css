@@ -1,6 +1,23 @@
-@import "../variables.less";
-@import "../mixins.less";
-
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.development-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .slogan {
   position: relative;
   color: #ffffff;
@@ -9,12 +26,12 @@
   background-size: cover;
   height: 301px;
   margin-bottom: 180px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .slogan {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
-
 .slogan__header {
   font-size: 36px;
   line-height: 36px;
@@ -23,7 +40,6 @@
   margin: 0;
   margin-top: 24px;
 }
-
 .slogan__description {
   font-size: 14px;
   line-height: 14px;
@@ -33,7 +49,6 @@
   margin: 0;
   margin-top: 26px;
 }
-
 .slogan__img {
   display: block;
   position: absolute;
@@ -42,52 +57,46 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
 .slogan__inner-link {
   display: block;
   margin: 0 auto;
   margin-top: 300px;
 }
-
-@media (min-width: @tablet-width) {
+@media (min-width: 660px) {
   .slogan {
-    width: @width-inner-tablet;
+    width: 659px;
     color: #000000;
     background-image: none;
     height: 840px;
     margin: 0 auto;
     margin-bottom: 0;
   }
-
   .slogan__header {
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
     text-align: left;
-    width: @width-inner-tablet;
+    width: 659px;
     padding-left: 87px;
     margin: 0;
     margin-top: 56px;
     margin-bottom: 40px;
   }
-
   .slogan__description {
     font-size: 20px;
     line-height: 20px;
-    width: @width-inner-tablet;
+    width: 659px;
     margin-top: 30px;
     margin-bottom: 48px;
     text-align: left;
     padding-left: 88px;
   }
-
   .slogan__img {
     width: 709px;
     left: 50%;
     top: 257px;
     z-index: -1;
   }
-
   .slogan__inner-link {
     font-size: 20px;
     line-height: 20px;
@@ -97,32 +106,27 @@
     margin-left: 89px;
   }
 }
-
-@media (min-width: @desktop-width) {
+@media (min-width: 960px) {
   .slogan {
-    width: @width-inner-desktop;
+    width: 1199px;
     height: 525px;
     margin-bottom: 84px;
   }
-
   .slogan__header {
     margin-bottom: 42px;
     padding-left: 80px;
   }
-
   .slogan__description {
-    width: @width-inner-desktop;
+    width: 1199px;
     padding-left: 79px;
     margin-bottom: 51px;
   }
-
   .slogan__img {
     width: 552px;
     top: -30px;
     left: calc(50% - -117px);
     z-index: 0;
   }
-
   .slogan__inner-link {
     margin-left: 80px;
   }
