@@ -1,3 +1,23 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.development-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .footer-list {
   position: relative;
   display: flex;
@@ -9,20 +29,29 @@
   border-bottom: 1px solid #d9d9d9;
 }
 .footer-list__icon-vk-mobile {
+  position: absolute;
+  top: 0;
+  left: 25px;
   width: 22px;
   height: 12px;
 }
 .footer-list__icon-insta-mobile {
+  position: absolute;
+  top: -2px;
+  left: -7px;
   width: 16px;
   height: 16px;
 }
 .footer-list__icon-fb-mobile {
+  position: absolute;
+  top: -4px;
+  right: 34px;
   width: 10px;
   height: 19px;
 }
 .footer-list__item {
-  padding-top: 22px;
-  padding-bottom: 32px;
+  padding-top: 23px;
+  padding-bottom: 34px;
 }
 .footer-list__icon {
   position: absolute;
@@ -37,7 +66,7 @@
   .footer-list {
     width: 130px;
     border: none;
-    margin-bottom: 15px;
+    margin-top: 19px;
   }
   .footer-list__item {
     padding: 0;
@@ -46,15 +75,24 @@
   .footer-list__icon-vk-mobile {
     width: 30px;
     height: 16px;
+    left: 53px;
   }
   .footer-list__icon-insta-mobile {
     width: 23px;
     height: 23px;
     top: -4px;
+    left: 51px;
   }
   .footer-list__icon-fb-mobile {
     width: 13px;
     height: 27px;
     top: -5px;
+    right: -57px;
+  }
+}
+@media (min-width: 1300px) {
+  .footer-list {
+    margin-right: 416px;
+    margin-top: 25px;
   }
 }
