@@ -44,12 +44,12 @@
 .site-list__item:hover :active {
   opacity: 0.5;
 }
-@media (max-width: 320px) {
+@media (max-width: 767px) {
   .logo-menu-wrapper--closed .site-list {
     display: none;
   }
 }
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .site-list {
     display: flex;
     justify-content: space-between;
@@ -63,7 +63,7 @@
     border-top: none;
   }
   .site-list__item--active a {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #68b738;
   }
   .site-list__item a {
     font-size: 18px;
@@ -72,7 +72,7 @@
     padding-bottom: 6px;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1300px) {
   .site-list {
     width: 100%;
     margin-top: 58px;
@@ -83,10 +83,10 @@
     margin: 0;
     padding: 8px 0;
   }
-  .site-list__item--catalog a {
+  .site-list__item a {
     color: #000000;
   }
-  .site-list__item--form a {
+  .site-list__item a {
     color: #000000;
   }
   .site-list__item-index--active a {
