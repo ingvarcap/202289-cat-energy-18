@@ -1,3 +1,6 @@
+@import "../variables.less";
+@import "../mixins.less";
+
 .footer-list {
   position: relative;
   display: flex;
@@ -9,23 +12,32 @@
   border-bottom: 1px solid #d9d9d9;
 
   &__icon-vk-mobile {
+    position: absolute;
+    top: 0;
+    left: 25px;
     width: 22px;
     height: 12px;
   }
 
   &__icon-insta-mobile {
+    position: absolute;
+    top: -2px;
+    left: -7px;
     width: 16px;
     height: 16px;
   }
 
   &__icon-fb-mobile {
+    position: absolute;
+    top: -4px;
+    right: 34px;
     width: 10px;
     height: 19px;
   }
 
   &__item {
-    padding-top: 22px;
-    padding-bottom: 32px;
+    padding-top: 23px;
+    padding-bottom: 34px;
   }
 
   &__icon {
@@ -44,7 +56,7 @@
   .footer-list {
     width: 130px;
     border: none;
-    margin-bottom: 15px;
+    margin-top: 19px;
 
     &__item {
       padding: 0;
@@ -54,18 +66,28 @@
     &__icon-vk-mobile {
       width: 30px;
       height: 16px;
+      left: 53px;
     }
 
     &__icon-insta-mobile {
       width: 23px;
       height: 23px;
       top: -4px;
+      left: 51px;
     }
 
     &__icon-fb-mobile {
       width: 13px;
       height: 27px;
       top: -5px;
+      right: -57px;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer-list {
+    margin-right: 416px;
+    margin-top: 25px;
   }
 }

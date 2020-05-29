@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Игорь Ильин](https://up.htmlacademy.ru/adaptive/18/user/202289).
-* Наставник: `Кексобот - молодец`.
+* Наставник: `Алексей Перепелка`.
 
 ---
 

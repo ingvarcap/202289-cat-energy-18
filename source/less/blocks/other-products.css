@@ -1,10 +1,26 @@
-@import "../variables.less";
-@import "../mixins.less";
-
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.development-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .other-products {
   margin-top: 40px;
 }
-
 .other-products__header {
   position: relative;
   display: inline-block;
@@ -17,39 +33,33 @@
   margin: 0 auto;
   margin-top: 5px;
 }
-
 .other-products__header::before {
   position: absolute;
   content: "";
   width: 55px;
   height: 3px;
-  background-color: @background-main;
+  background-color: #68b738;
   top: 13px;
   right: -77px;
 }
-
 .other-products__list {
   list-style: none;
   margin: 0;
   padding: 0;
   margin-bottom: 55px;
 }
-
 .other-products__list-item {
   margin-top: 15px;
   border-top: 1px solid #cdcdcd;
 }
-
 .other-products__list-item-count {
   margin: 0;
   padding: 0;
 }
-
 .other-products__list-item-price {
   margin: 0;
   padding: 0;
 }
-
 .other-products__list-item-header {
   font-size: 16px;
   line-height: 16px;
@@ -60,7 +70,6 @@
   margin-bottom: 12px;
   padding: 0;
 }
-
 .other-products__list-item-property {
   font-family: "Arial", "PT Sans", sans-serif;
   line-height: 14px;
@@ -68,29 +77,26 @@
   padding: 0;
   margin-bottom: 15px;
 }
-
 .other-products__inner-link {
   font-size: 16px;
   line-height: 20px;
   border-bottom: 1px solid #cdcdcd;
   padding: 12px 0;
 }
-
 .other-products__promo {
   position: relative;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
   height: 290px;
-
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+}
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .other-products__promo {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 }
-
 .other-products__promo-img {
   margin: 62px auto;
 }
-
 .other-products__promo-description {
   display: block;
   font-family: "Arial", "PT Sans", sans-serif;
@@ -101,23 +107,19 @@
   width: 161px;
   margin: 0 auto;
 }
-
-@media (min-width: @tablet-width) {
+@media (min-width: 768px) {
   .other-products__header {
     padding-left: 0;
   }
-
   .other-products__list-item-header {
     margin-left: 40px;
     margin-bottom: 27px;
   }
-
   .other-products__inner-link {
     width: 630px;
     margin: 0 auto;
     margin-bottom: 27px;
   }
-
   .other-products__list-item {
     display: flex;
     flex-wrap: wrap;
@@ -125,17 +127,14 @@
     justify-content: space-between;
     margin-top: 0;
   }
-
   .other-products__list-item-property {
     margin-top: 15px;
     margin-right: 40px;
     margin-bottom: 27px;
   }
-
   .other-products__list-item-price {
     padding-left: 60px;
   }
-
   .other-products__promo {
     position: relative;
     display: flex;
@@ -143,18 +142,17 @@
     align-items: center;
     justify-content: space-around;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/gift-photo-tablet@2x.jpg");
-    }
   }
-
   .other-products__promo-description {
     text-align: left;
   }
 }
-
-@media (min-width: @desktop-width) {
+@media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .other-products__promo {
+    background-image: url("../img/gift-photo-tablet@2x.jpg");
+  }
+}
+@media (min-width: 1300px) {
   .other-products {
     display: flex;
     flex-direction: row;
@@ -163,24 +161,20 @@
     align-items: center;
     margin-bottom: 85px;
   }
-
   .other-products__header {
     padding-left: 0;
     padding-right: 0;
   }
-
   .other-products__wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
   }
-
   .other-products__list {
     width: 895px;
     margin: 0;
   }
-
   .other-products__list-item {
     display: flex;
     justify-content: space-between;
@@ -188,30 +182,25 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
-
   .other-products__list-item:last-child {
     border-bottom: 1px solid #cdcdcd;
   }
-
   .other-products__list-item-header {
     display: block;
     width: 245px;
     margin: 0;
     padding: 0;
   }
-
   .other-products__list-item-property {
     margin: 0;
     padding: 0;
     width: 285px;
   }
-
   .other-products__inner-link {
     display: block;
     width: 245px;
     margin: 0;
   }
-
   .other-products__promo {
     display: flex;
     flex-direction: column;
@@ -220,21 +209,20 @@
     background-repeat: no-repeat;
     width: 245px;
     height: 290px;
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/gift-photo-desktop@2x.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
   }
-
   .other-products__promo-description {
     text-align: center;
     margin: 0 auto;
   }
-
   .other-products__promo-img {
     margin-top: 30px;
     margin-bottom: 0;
+  }
+}
+@media (min-width: 1300px) and (min-resolution: 144dpi), (min-width: 1300px) and (min-resolution: 1.5dppx) {
+  .other-products__promo {
+    background-image: url("../img/gift-photo-desktop@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }

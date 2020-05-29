@@ -1,22 +1,36 @@
-@import "../variables.less";
-@import "../mixins.less";
-
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.development-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .page-header {
   position: relative;
   margin: 0;
 }
-
 .page-header--catalog {
   margin-top: 200px;
 }
-
-@media (min-width: @tablet-width) {
+@media (min-width: 768px) {
   .page-header--catalog {
     margin-top: 0;
   }
 }
-
-@media (min-width: @desktop-width) {
+@media (min-width: 1300px) {
   .page-header::after {
     position: absolute;
     content: "";
@@ -29,13 +43,11 @@
     left: 50%;
     z-index: -1;
   }
-
   .page-header--catalog::after {
     position: absolute;
     content: "";
     background-image: none;
   }
-
   .page-header--form::after {
     position: absolute;
     content: "";

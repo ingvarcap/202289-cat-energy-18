@@ -19,3 +19,12 @@
 .development-list {
   .list-reset();
 }
+
+.no-outline() {
+  outline: none;
+  background: transparent;
+
+  &::before {
+    display: none;
+  }
+}

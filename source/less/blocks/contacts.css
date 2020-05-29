@@ -1,23 +1,37 @@
-@import "../variables.less";
-@import "../mixins.less";
-
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.development-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .contacts--catalog,
 .contacts--form {
-  background: @background-main-2;
+  background: #f2f2f2;
 }
-
 .contacts--catalog {
   margin-top: 28px;
-  background-color: @background-main-2;
+  background-color: #f2f2f2;
 }
-
 .contacts__wrapper {
   width: 280px;
   margin: 0 auto;
   padding-top: 29px;
   padding-bottom: 25px;
 }
-
 .contacts__invite {
   font-size: 16px;
   line-height: 20px;
@@ -25,7 +39,6 @@
   width: 136px;
   margin: 0;
 }
-
 .contacts__address {
   font-family: "Arial", "PT Sans", sans-serif;
   font-size: 14px;
@@ -35,12 +48,10 @@
   margin: 0;
   margin-right: 4px;
 }
-
 .contacts__img-map-wrapper {
   position: relative;
-  background-color: @background-main-2;
+  background-color: #f2f2f2;
 }
-
 .contacts__img-map-wrapper::before {
   position: absolute;
   background-image: url("../img/map-pin-mobile.png");
@@ -52,7 +63,6 @@
   left: calc(50% - 24px);
   z-index: 100;
 }
-
 .contacts__img-map {
   position: absolute;
   top: 0;
@@ -60,19 +70,15 @@
   width: 100%;
   height: 360px;
 }
-
-
-@media (min-width: @tablet-width) {
+@media (min-width: 660px) {
   .contacts {
     background-color: #ffffff;
     width: 100%;
   }
-
   .contacts__wrapper {
     width: 708px;
     padding-bottom: 0;
   }
-
   .contacts__invite {
     font-size: 20px;
     line-height: 25px;
@@ -81,7 +87,6 @@
     margin-top: 36px;
     margin-bottom: 65px;
   }
-
   .contacts__address {
     width: 155px;
     font-size: 16px;
@@ -89,16 +94,13 @@
     text-align: right;
     margin-top: 34px;
   }
-
   .contacts__address-street {
     display: block;
     padding-bottom: 20px;
   }
-
   .contacts__img-map-wrapper {
     position: relative;
   }
-
   .contacts__img-map-wrapper::before {
     background-image: url("../img/map-pin.png");
     width: 124px;
@@ -107,31 +109,25 @@
     left: calc(50% - 62px);
     z-index: 100;
   }
-
   .contacts__img-map {
     left: calc(50% - 382px);
   }
 }
-
-@media (min-width: @desktop-width) {
+@media (min-width: 960px) {
   .contacts__wrapper {
-    width: @width-inner-desktop;
+    width: 1199px;
   }
-
   .contacts__img-map {
     left: calc(50% - 610px);
   }
-
   .contacts__img-map-wrapper::before {
     background-image: url("../img/map-pin.png");
     top: 150px;
     left: calc(50% + 278px);
   }
-
   .contacts__invite {
     margin-left: 76px;
   }
-
   .contacts__address {
     text-align: left;
     margin-right: 89px;

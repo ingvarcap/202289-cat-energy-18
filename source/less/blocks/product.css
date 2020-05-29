@@ -1,10 +1,26 @@
-@import "../variables.less";
-@import "../mixins.less";
-
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.work-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.development-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .product {
   border-bottom: 1px solid #ededed;
 }
-
 .product__header {
   display: block;
   font-size: 16px;
@@ -15,18 +31,15 @@
   margin: 0;
   margin-bottom: 9px;
 }
-
 .product-wrap {
   width: 140px;
 }
-
 .product__table {
   font-family: "Arial", "PT Sans", sans-serif;
   font-size: 12px;
   line-height: 16px;
   width: 140px;
 }
-
 .product__inner-link {
   display: block;
   font-size: 16px;
@@ -35,12 +48,10 @@
   padding-bottom: 10px;
   margin-bottom: 21px;
 }
-
 .product__properties-2 {
   text-align: right;
 }
-
-@media (min-width: @tablet-width) {
+@media (min-width: 768px) {
   .product {
     position: relative;
     display: flex;
@@ -49,15 +60,13 @@
     align-items: center;
     flex-wrap: wrap;
     width: 324px;
-    background-color: @background-main-2;
+    background-color: #f2f2f2;
     margin-bottom: 140px;
     padding-bottom: 35px;
   }
-
   .product-wrap {
     width: 250px;
   }
-
   .product__header {
     font-size: 20px;
     line-height: 20px;
@@ -67,30 +76,25 @@
     margin-top: 163px;
     margin-bottom: 19px;
   }
-
   .product__table {
     font-size: 16px;
     width: 250px;
   }
-
   .product__image {
     position: absolute;
     left: 0;
     bottom: 300px;
     margin-left: 0;
   }
-
   .product__properties {
     border-bottom: 1px solid #cdcdcd;
     padding-top: 10px;
     padding-bottom: 10px;
   }
-
   .product__properties-2 {
     padding-right: 0;
     text-align: right;
   }
-
   .product__inner-link {
     display: block;
     width: 250px;
@@ -98,21 +102,17 @@
     margin-top: 20px;
   }
 }
-
-@media (min-width: @desktop-width) {
+@media (min-width: 1300px) {
   .product {
     width: 245px;
   }
-
   .product__table {
     width: 170px;
   }
-
   .product__image {
     bottom: 297px;
     left: 0;
   }
-
   .product__inner-link {
     width: 169px;
   }
