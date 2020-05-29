@@ -86,9 +86,6 @@
   .site-list__item a {
     color: #000000;
   }
-  .site-list__item a {
-    color: #000000;
-  }
   .site-list__item-index--active a {
     border-bottom: 2px solid #ffffff;
   }
