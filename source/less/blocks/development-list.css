@@ -56,8 +56,8 @@
 }
 @media (min-width: 1300px) {
   .development-list {
-    margin-left: 0;
     margin-right: 80px;
+    margin-left: 250px;
   }
   .development-list__item {
     margin-top: 15px;

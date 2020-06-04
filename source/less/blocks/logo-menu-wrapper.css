@@ -76,9 +76,9 @@
 .logo-menu-wrapper__logo :active {
   opacity: 0.6;
 }
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .logo-menu-wrapper {
-    width: 659px;
+    width: 708px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -100,10 +100,10 @@
     display: none;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1300px) {
   .logo-menu-wrapper {
-    width: 1199px;
-    margin-bottom: 52px;
+    width: 1220px;
+    margin-bottom: 73px;
   }
   .logo-menu-wrapper__logo {
     padding: 0;

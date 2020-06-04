@@ -32,9 +32,9 @@
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .main-catalog {
-    width: 659px;
+    width: 708px;
     margin: 0 auto;
   }
   .main-catalog__header {
@@ -52,13 +52,14 @@
     flex-wrap: wrap;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 1300px) {
   .main-catalog {
-    width: 1199px;
+    width: 1220px;
     margin: 0 auto;
   }
   .main-catalog__header {
     margin: 0 auto;
+    margin-bottom: 165px;
     text-align: left;
     border: none;
   }
