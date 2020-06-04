@@ -1138,7 +1138,7 @@ textarea[placeholder] {
   .product__image {
     position: absolute;
     left: 0;
-    bottom: 185px;
+    bottom: 300px;
     margin-left: 0;
   }
   .product__properties {
